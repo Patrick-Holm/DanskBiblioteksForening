@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IO;
 using Repository;
 
 namespace BIZ
@@ -12,6 +14,7 @@ namespace BIZ
         private ObservableCollection<ClassBog> _boeger;
         private ObservableCollection<ClassBog> _laanteBoeger;
         private ClassBog _bog;
+        private ClassDbfDB DbFDB = new ClassDbfDB();
         public void classBIZ()
         {
 
@@ -64,18 +67,17 @@ namespace BIZ
         {
 
         }
-        /*public ObservableCollection<ClassBog> GetAllLentBooks(ClassPerson id)
+        public ObservableCollection<ClassBog> GetAllLentBooks(ClassPerson id)
         {
-            return classDbfDB.GetAllLentToUser(id, "1");
+            return DbFDB.GetAllBooksLentToUser(id, "1");
         }
         public ObservableCollection<ClassBog> GetAllBooksWhereTheTitleContainsTheseWords(string words)
         {
-            return classDbfDB.GetAllBooksLike(words);
+            return DbFDB.GetAllBooksLike(words);
         }
         public bool CheckForDobuleLending(ClassBog bog)
         {
 
-        } */
+        } 
     }
-}
 }

@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Repository;
 
 namespace IO
 {
@@ -54,7 +55,7 @@ namespace IO
         /// <param name="userID">username of user</param>
         /// <param name="password">password fo user</param>
         /// <returns>id of user if logIn infomation is right</returns>
-        public ClassUser GetUser(string userID, string password)
+        public ClassPerson GetUser(string userID, string password)
         {
             DbReturnDataTable($"GetUser '{userID}','{password}'");
         }

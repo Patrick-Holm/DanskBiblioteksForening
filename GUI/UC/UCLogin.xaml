@@ -61,15 +61,47 @@
             Grid.Row="1"
             Text=""
             VerticalAlignment="Center"
-            Width="160"
-            />
-        <Button x:Name="UCLoginButton"
+            Width="160" />
+        <Button
+            x:Name="UCLoginButton"
+            MaxHeight="30"
+            MaxWidth="70"
+            MinHeight="20"
+            MinWidth="50"
             Content="Log in"
             Grid.Column="2"
-            HorizontalAlignment="Center"
+            HorizontalAlignment="Stretch"
             Grid.Row="3"
-            VerticalAlignment="Center"
-            Width="75"
-            />
+            VerticalAlignment="Stretch"
+            Margin="10,20" />
+        <TextBox x:Name="box1"
+            Grid.Column="4"
+            HorizontalAlignment="Stretch"
+            MaxHeight="23"
+            Margin="5,30"
+            Grid.Row="0"
+            TextWrapping="Wrap"
+            Text="TextBox"
+            VerticalAlignment="Center" />
+        <TextBox
+            x:Name="box2"
+            Grid.Column="4"
+            HorizontalAlignment="Stretch"
+            MaxHeight="23"
+            Margin="5,30"
+            Grid.Row="1"
+            TextWrapping="Wrap"
+            Text="TextBox"
+            VerticalAlignment="Center" />
+        <TextBox
+            x:Name="box3"
+            Grid.Column="4"
+            HorizontalAlignment="Stretch"
+            MaxHeight="23"
+            Margin="5,30"
+            Grid.Row="2"
+            TextWrapping="Wrap"
+            Text="TextBox"
+            VerticalAlignment="Center" />
     </Grid>
 </UserControl>
