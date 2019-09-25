@@ -50,7 +50,7 @@
         <PasswordBox
             Grid.Column="2"
             HorizontalAlignment="Center"
-            Height="16"
+            Height="23"
             Grid.Row="2"
             VerticalAlignment="Center"
             Width="160" />
@@ -63,7 +63,7 @@
             VerticalAlignment="Center"
             Width="160"
             />
-        <Button
+        <Button x:Name="UCLoginButton"
             Content="Log in"
             Grid.Column="2"
             HorizontalAlignment="Center"
