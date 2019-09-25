@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class Udlaan
+    public class Udlaan : ClassNotify
     {
         public void udlaan()
         {
