@@ -73,7 +73,8 @@
             HorizontalAlignment="Stretch"
             Grid.Row="3"
             VerticalAlignment="Stretch"
-            Margin="10,20" />
+            Margin="10,20"
+                Click="UCLoginButton_Click" />
         <TextBox x:Name="box1"
             Grid.Column="4"
             HorizontalAlignment="Stretch"

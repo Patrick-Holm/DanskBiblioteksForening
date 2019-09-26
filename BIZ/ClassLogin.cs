@@ -1,4 +1,7 @@
-﻿using System;
+﻿
+using System;
+using IO;
+using Repository;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +11,7 @@ namespace BIZ
 {
     public class ClassLogin
     {
+        private ClassDbfDB DbFDB = new ClassDbfDB();
         private string _id;
         private string _user;
 
@@ -40,11 +44,26 @@ namespace BIZ
             }
         }
 
-        public ClassPerson GetUserData(int id, string user)
+        public ClassPerson GetUserData(string id, string user)
         {
-            ClassPerson person = new ClassPerson();
+            ClassPerson persontmp = new ClassPerson();
+            try
+            {
 
-            return person;
+                persontmp = DbFDB.GetUser(id, user);
+
+
+            }
+            catch (Exception)
+            {
+                persontmp = new ClassPerson();
+
+            }
+
+
+
+
+            return persontmp;
         }
     }
 }

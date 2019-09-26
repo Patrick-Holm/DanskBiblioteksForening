@@ -22,11 +22,17 @@ namespace GUI
     public partial class UCLogin : UserControl
     {
         ClassBiz cb;
+        ClassLogin cl;
         public UCLogin(ClassBiz inBiz)
         {
             InitializeComponent();
             cb = inBiz;
 
+        }
+
+        private void UCLoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            cl.GetUserData(cl.id, cl.user);
         }
     }
 }

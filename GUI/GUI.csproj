@@ -106,6 +106,10 @@
       <Project>{ba7f30a5-816b-427e-831b-83942706eb89}</Project>
       <Name>BIZ</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{FAEA704B-F4A1-4E00-BA78-6622704C6D86}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
