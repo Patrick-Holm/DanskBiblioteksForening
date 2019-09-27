@@ -11,7 +11,7 @@ namespace IO
     public class ClassDbfDB : ClassDB
     {
         /// <summary>
-        /// Set the connection string to connect to a DB of our choise
+        /// Set the connection string to connect to a DB of our choice
         /// </summary>
         public ClassDbfDB()
         {
@@ -30,7 +30,7 @@ namespace IO
         }
 
         /// <summary>
-        /// Retrive all books lent to current user by calling stored procedur "GetAllBooksLentToUser"
+        /// Retrieves all books lent to current user by calling a stored procedure - "GetAllBooksLentToUser"
         /// </summary>
         /// <param name="id">Current user id</param>
         /// <returns>ObservableCollection<ClassBook> with all books lent to current user</returns>
